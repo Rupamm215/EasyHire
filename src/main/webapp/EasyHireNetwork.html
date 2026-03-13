@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EasyHire | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins','Segoe UI',sans-serif;
+}
+
+/* ================= BODY BACKGROUND ================= */
+body{
+    min-height:100vh;
+    background:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url("index.jpg") no-repeat center/cover fixed;
+    color:#ffffff;
+}
+
+/* ================= NAVBAR (SAME AS OTHERS) ================= */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:linear-gradient(90deg,#2563eb,#7c3aed);
+    box-shadow:0 10px 28px rgba(0,0,0,0.45);
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    padding:24px 32px; /* thick bar */
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand{
+    font-size:28px;
+    font-weight:800;
+    color:white;
+    letter-spacing:1px;
+}
+
+.navbar nav a{
+    color:#e5e7eb;
+    text-decoration:none;
+    margin-left:28px;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.navbar nav a:hover{
+    color:#ffffff;
+    border-bottom:2px solid #fff;
+    padding-bottom:4px;
+}
+
+/* ================= HERO SECTION ================= */
+.hero{
+    min-height:calc(100vh - 90px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+/* ================= HERO CARD ================= */
+.hero-card{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    padding:60px 70px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,0.25);
+    box-shadow:0 30px 70px rgba(0,0,0,0.6);
+    max-width:700px;
+}
+
+/* ================= TEXT ================= */
+.hero-card h1{
+    font-size:42px;
+    font-weight:800;
+    margin-bottom:20px;
+    text-shadow:0 6px 20px rgba(0,0,0,0.9);
+}
+
+.hero-card p{
+    font-size:18px;
+    color:#e5e7eb;
+    margin-bottom:40px;
+}
+
+/* ================= BUTTONS ================= */
+.actions{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.actions a{
+    padding:14px 34px;
+    font-size:18px;
+    font-weight:700;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+/* Employer Button */
+.btn-employer{
+    background:linear-gradient(90deg,#22c55e,#16a34a);
+    color:#022c22;
+}
+
+.btn-employer:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 35px rgba(34,197,94,0.5);
+}
+
+/* Worker Button */
+.btn-worker{
+    background:linear-gradient(90deg,#3b82f6,#2563eb);
+    color:white;
+}
+
+.btn-worker:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 35px rgba(59,130,246,0.5);
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:600px){
+    .hero-card{
+        padding:40px 30px;
+    }
+    .hero-card h1{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <div class="navbar">
+        <div class="brand">EasyHire</div>
+        <nav>
+            <a href="EasyHireNetwork.html">Home</a>
+            <a href="aboutus.jsp">About Us</a>
+            <a href="contactus.jsp">Contact Us</a>
+            <a href="login.jsp"> Admin Login</a>
+            <a href="Loginn.jsp"> Employer Login</a>
+
+        </nav>
+    </div>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+    <div class="hero-card">
+        <h1>Easy Hire Network System</h1>
+        <p>
+            Connecting employers and skilled workers through a fast, secure,
+            and reliable digital platform.
+        </p>
+
+        <div class="actions">
+            <a href="PostWork.jsp" class="btn-employer">Post Work (Employer)</a>
+            <a href="FindWork.jsp" class="btn-worker">Find Work (Worker)</a>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
